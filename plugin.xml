@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse?>
+<plugin>
+
+  <extension point="org.eclipse.jdt.ui.javaCompletionProposalComputer"
+    id="WordCompletionProposalComputer"
+    name="!!MyCodeCompleter">
+    <javaCompletionProposalComputer
+          activate="true"
+          categoryId="content-assist-example.WordCompletionProposalComputer"
+          class="content_assist_example.ExampleProposalComputer">
+          <!--         
+          If no partition types are specified, the computer is added to all partition types.
+          see documentation in "Extension Point References" http://help.eclipse.org/index.jsp?topic=/org.eclipse.jdt.doc.isv/reference/extension-points/org_eclipse_jdt_ui_javaCompletionProposalComputer.html
+          -->
+    </javaCompletionProposalComputer>   
+  </extension>
+
+</plugin>
